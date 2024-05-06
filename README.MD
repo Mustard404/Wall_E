@@ -31,23 +31,23 @@
 ## 部署方式
 ### 数据库
 ```
-sudo docker run -itd \  
-  --name mysql-wall \  
-  -p 3306:3306 \  
-  -e MYSQL_ROOT_PASSWORD=changeMe \  
+sudo docker run -itd \
+  --name mysql-wall \
+  -p 3306:3306 \
+  -e MYSQL_ROOT_PASSWORD=changeMe \
   mysql
 ```
 ### MQ
 建议使用Docker部署
 ```
-sudo docker run -d \  
-  --name rabbitmq-wall \  
-  -p 5672:5672 \  
-  -p 15672:15672 \  
-  -e RABBITMQ_DEFAULT_USER=admin \  
-  -e RABBITMQ_DEFAULT_PASS=changeMe \  
-  -e RABBITMQ_DEFAULT_VHOST=wall \  
-  --restart=always \  
+sudo docker run -d \
+  --name rabbitmq-wall \
+  -p 5672:5672 \
+  -p 15672:15672 \
+  -e RABBITMQ_DEFAULT_USER=admin \
+  -e RABBITMQ_DEFAULT_PASS=changeMe \
+  -e RABBITMQ_DEFAULT_VHOST=wall \
+  --restart=always \
   rabbitmq:management
 ```
 建议使用Docker部署
