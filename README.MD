@@ -87,8 +87,5 @@ sudo ln /usr/libx86_64-linux-gnu/libpcap.so.0.8 /usr/libx86_64-linux-gnu/libpcap
 ### 下载部署
 [Wall_E项目地址](https://github.com/Mustard404/Wall_E/releases)     
 分别修改Server端和Agent端内的config.ini, 执行即可。
-### 运行效果
-![Server](IMG/Server.png)
-![Agent](IMG/Agent.png)
-![Wall](IMG/Wall_e.png)
+
 
