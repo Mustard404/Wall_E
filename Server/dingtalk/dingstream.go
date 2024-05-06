@@ -23,6 +23,7 @@ func OnChatBotMessageReceived(ctx context.Context, data *chatbot.BotCallbackData
 
 	for i, line := range strings.Split(data.Text.Content, "\n") {
 		accMsg, errMsg := "", ""
+		line = strings.TrimSpace(line)
 		if i == 0 {
 			switch line {
 			case "添加资产":
