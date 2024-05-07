@@ -139,7 +139,7 @@ func (c *RabbitMQClient) Consume() {
 			}
 
 			portInfo = Port{
-				Port:     int(portInfo.ID),
+				Port:     portInfo.Port,
 				Protocol: portInfo.Protocol,
 				State:    portInfo.State,
 				Service:  portInfo.Service,
