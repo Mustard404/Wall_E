@@ -29,7 +29,8 @@
 ![Wall.png](Image%2FArchitecture.png)
 
 ## 部署方式
-### 数据库
+### 数据库  
+建议使用Docker部署
 ```
 sudo docker run -itd \
   --name mysql-wall \
